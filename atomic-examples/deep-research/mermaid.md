@@ -2,7 +2,7 @@
 flowchart TD
     %% Decision Flow Diagram
     subgraph DecisionFlow["Research Decision Flow"]
-        Start([[User] Question]) --> B{[Agent 1] Need Search?}
+        Start([User Question]) --> B{[Agent 1] Need Search?}
         B -->|Yes| C[[Agent 2] Generate Search Queries]
         C --> D[[Tool 1]: Perform Web Search]
         D --> E[[Tool 2]: Scrape Webpages]
